@@ -1,20 +1,28 @@
-# USC Homework-20 ML
-## Machine Learning Homework for USC Bootcamp
-
-
-### Conclusions are documented in the Jupyter Notebook Markdown cells and comments.
-
-
-# Assignmentz:
-## Exoplanet Exploration
+# Machine Learning Homework - Exoplanet Exploration
 
 ![exoplanets.jpg](Images/exoplanets.jpg)
+
+### Before You Begin
+
+1. Create a new repository for this project called `machine-learning-challenge`. **Do not add this homework to an existing repository**.
+
+2. Clone the new repository to your computer.
+
+3. Give each model you choose their own Jupyter notebook, **do not use more than one model per notebook.**
+
+4. Save your best model to a file. This will be the model used to test your accuracy and used for grading.
+
+5. Commit your Jupyter notebooks and model file and push them to GitHub.
+
+## Note
+
+Keep in mind that this homework is optional! However, you will gain a much greater understanding of testing and tuning different Classification models if you do complete it.
 
 ## Background
 
 Over a period of nine years in deep space, the NASA Kepler space telescope has been out on a planet-hunting mission to discover hidden planets outside of our solar system.
 
-To help process this data, you will create machine learning models capable of classifying whether a record is a candidate exoplanet from the dataset of observed objects.
+To help process this data, you will create machine learning models capable of classifying candidate exoplanets from the raw dataset.
 
 In this homework assignment, you will need to:
 
@@ -28,19 +36,19 @@ In this homework assignment, you will need to:
 
 ### Preprocess the Data
 
-* Preprocess the raw dataset prior to fitting the model.
-* Perform feature selection and remove unnecessary features. The dataset includes 50 columns-- how many will be sufficient for a healthy model?
+* Preprocess the dataset prior to fitting the model.
+* Perform feature selection and remove unnecessary features.
 * Use `MinMaxScaler` to scale the numerical data.
 * Separate the data into training and testing data.
 
 ### Tune Model Parameters
 
 * Use `GridSearch` to tune model parameters.
-* Tune and compare at least two different classifiers. Three is recommended.
+* Tune and compare at least two different classifiers.
 
-### Evaluate Model Performance
+### Reporting
 
-Compare the performance of your tuned classifiers to determine the best-performing model.
+* Create a README that reports a comparison of each model's performance as well as a summary about your findings and any assumptions you can make based on your model (is your model good enough to predict new exoplanets? Why or why not? What would make your model be better at predicting new exoplanets?).
 
 - - -
 
@@ -60,14 +68,32 @@ Compare the performance of your tuned classifiers to determine the best-performi
 
 * Start by cleaning the data, removing unnecessary columns, and scaling the data.
 
-* For each ML algorithm, try a simple model first, and then tune the model using `GridSearch`; if you choose to use deep learning, try different activation functions and number of nodes, layers, etc. (you will need to do this manually).
+* Not all variables are significant be sure to remove any insignificant variables.
+
+* Make sure your `sklearn` package is up to date.
+
+* Try a simple model first, and then tune the model using `GridSearch`.
+
+* When hyper-parameter tuning, some models have parameters that depend on each other, and certain combinations will not create a valid model. Be sure to read through any warning messages and check the documentation
 
 - - -
 
 ## Submission
 
-* Create a Jupyter Notebook and host the notebook on GitHub.
+* Create a Jupyter Notebook for each model and host the notebooks on GitHub.
 
-* ***Include a README.md file that summarizes your assumptions and findings.*** Try to include as many visualizations as possible, visualizing the distribution of your features and your models' accuracies.  
+* Create a file for your best model and push to GitHub
+
+* Include a README.md file that summarizes your assumptions and findings.
 
 * Submit the link to your GitHub project to Bootcamp Spot.
+
+* Ensure your repository has regular commits and a thorough README.md file
+
+## Rubric
+
+[Unit 21 Rubric - Machine Learning Homework - Exoplanet Exploration](https://docs.google.com/document/d/1IcLYc8KHt82ftMcsueM6s7rn9nexuN4PqHSJDUa7e2Y/edit?usp=sharing)
+
+- - -
+
+© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
